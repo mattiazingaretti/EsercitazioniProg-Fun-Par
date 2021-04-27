@@ -12,7 +12,7 @@ object E2 {
         if (n < 2 ) a 
         else if(n == 2 ) b
         else {
-            val ret = Par.par( Fib.fib(0,1)(n) )( Fib.fib(1,0)(n) ) 
+            val ret = Par.par( Fib.fib(1,0)(n) )( Fib.fib(0,1)(n) ) 
             ret._1 + ret._2
         }
     }
